@@ -23,6 +23,10 @@ Ensure you have the above dependencies installed in your Python environment.
 - Clone this repository using `git clone [repository URL]`.
 - Navigate into the repository folder.
 
+or use the following command:
+pip install git+https://github.com/saeidehmir/TopGithubRepos.git
+
+
 ### Executing Program
 
 - Run the script using Python:
