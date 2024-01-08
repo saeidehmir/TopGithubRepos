@@ -12,10 +12,12 @@ import matplotlib.pyplot as plt
 import logging
 
 
-def get_top_repos(N):
+def get_top_repos(N, test=False):
     # Setting up logging
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
+    if test is True:
+        return [("MyRepo", 1000)]
     try:
         token = input("Please provide your GitHub token:\n")
         if not token:
