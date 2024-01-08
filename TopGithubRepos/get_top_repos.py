@@ -17,7 +17,10 @@ def get_top_repos(N, test=False):
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
     if test is True:
-        return [("MyRepo", 1000)]
+        results = []
+        for i in range(N):
+            results.append(("MyRepo", 1000))
+        return results
     try:
         token = input("Please provide your GitHub token:\n")
         if not token:
