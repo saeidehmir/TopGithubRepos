@@ -61,3 +61,5 @@ def get_top_repos(N):
         logger.warning(f"Network related error occurred: {ce}")
     except Exception as e:
         logger.error(f"An unexpected error occurred: {e}")
+
+    return list(zip(repo_names, repo_stars))
